@@ -20,19 +20,13 @@ Creare ROOT CA self-signed e locale
         openssl req -x509 -new -nodes -key private/ca.key.pem -sha256 -days 3650 -out certs/ca.cert.pem
 *!!Durante la creazione verrà chiesto di inserire delle informazioni:*
 
-  •   Country Name (2 letter code) [AU]:
-  
-  •   State or Province Name (full name) [Some-State]:
-  
-  •   Locality Name (eg, city) []:
-  
-  •   Organization Name (eg, company) [Internet Widgits Pty Ltd]:
-  
-  •   Organizational Unit Name (eg, section) []:
-  
-  •   Common Name (e.g. server FQDN or YOUR name) []:
-  
-  •   Email Address []:
+         Country Name (2 letter code) [AU]:
+         State or Province Name (full name) [Some-State]:  
+         Locality Name (eg, city) []:  
+         Organization Name (eg, company) [Internet Widgits Pty Ltd]:  
+         Organizational Unit Name (eg, section) []:  
+         Common Name (e.g. server FQDN or YOUR name) []:  
+         Email Address []:
 ## verifica generazione certificato 
 
     openssl x509 -noout -text -in certs/ca.cert.pem
