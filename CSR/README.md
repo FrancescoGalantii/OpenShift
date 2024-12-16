@@ -25,6 +25,7 @@ Creare un CSR, Quando crei un file CSR, stai essenzialmente richiedendo a una CA
     openssl req -noout -text -in mydomain.csr
 ## Dettagli
 • `mydomain.key`: La chiave privata, da conservare in sicurezza. 
+
 • `mydomain.csr`: La richiesta CSR, da inviare a una CA (Certificate Authority) o da firmare con una CA locale.
 
 
