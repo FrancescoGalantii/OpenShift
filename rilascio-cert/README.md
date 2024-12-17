@@ -57,31 +57,31 @@ Rilasciare i certificati richiesti dal CSR tramite ROOT CA creata precedentement
    3.2 vorrà dire che il certificato che OpenSSL ha verificato e firmato con successo il CSR utilizzando la Root CA.
 ## spiegazione output
 1. **`Check that the request matches the signature`**
-   • Questo passaggio verifica che il CSR non sia stato alterato e che corrisponda alla chiave privata utilizzata per generarlo.
+   --> Questo passaggio verifica che il CSR non sia stato alterato e che corrisponda alla chiave privata utilizzata per generarlo.
    
    • Signature ok conferma che la firma del CSR è valida.
    
 3. **`The Subject's Distinguished Name is as follows`**
-   • OpenSSL ti mostra i dettagli del soggetto (Subject DN) estratti dal CSR.
+   --> OpenSSL ti mostra i dettagli del soggetto (Subject DN) estratti dal CSR.
    
    • Questi campi rappresentano il titolare del certificato:
    
 5. **`Certificate is to be certified until`**
-   • Questa riga specifica la durata del certificato, in base al valore passato con l'opzione `-days`
+   --> Questa riga specifica la durata del certificato, in base al valore passato con l'opzione `-days`
    
 7. **`Sign the certificate? [y/n]`:y**
-   • Ti viene chiesto di confermare se vuoi firmare il certificato.
+   --> Ti viene chiesto di confermare se vuoi firmare il certificato.
    
       • Quando digiti y, OpenSSL procede a creare il certificato e lo salva nel percorso specificato nel comando.
    
 9. **`1 out of 1 certificate requests certified, commit? [y/n]`:y**
-   • OpenSSL ti chiede un’ulteriore conferma per aggiornare il database della CA, che tiene traccia dei certificati emessi.
+   --> OpenSSL ti chiede un’ulteriore conferma per aggiornare il database della CA, che tiene traccia dei certificati emessi.
    
       •Premendo y, OpenSSL:
        Aggiunge i dettagli del certificato al file index.txt (il database della CA) e --> Incrementa il numero di serie in serial
    
 11. **`Write out database with 1 new entries`**
-   • Conferma che il certificato è stato emesso e registrato correttamente nel database
+    --> Conferma che il certificato è stato emesso e registrato correttamente nel database
 
 
        
