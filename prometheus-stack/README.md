@@ -99,7 +99,7 @@ e provare il BlackBox Exporter per il monitoring degli endpoint http.
                   targetLabel: instance
                 - targetLabel: __address__
                   replacement: prometheus-blackbox-exporter.monitoring.svc:9115
-     •  applicare il file al cluster --> `kubectl apply -f blackbox-servicemonitor.yaml
+     •  applicare il file al cluster --> `kubectl apply -f blackbox-servicemonitor.yaml`
 
      •  aggiungere un target da monitorare
         vi blackbox-targets.yaml
