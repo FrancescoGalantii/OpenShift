@@ -1,7 +1,11 @@
 # **`obiettivo`**
 Creare ROOT CA self-signed e locale
+
+---
 ## prerequisiti
 • avere OpenSSL installato 
+
+---
 ## passaggi per la creazione
 1. creazione directory per la CA
     
@@ -27,9 +31,11 @@ Creare ROOT CA self-signed e locale
          Organizational Unit Name (eg, section) []:  
          Common Name (e.g. server FQDN or YOUR name) []:  
          Email Address []:
+---
 ## verifica generazione certificato 
 
     openssl x509 -noout -text -in certs/ca.cert.pem
+---
 ## consigli aggiuntivi 
 • Conservare in sicurezza la chiave privata della ROOT CA
 
