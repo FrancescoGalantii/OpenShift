@@ -31,5 +31,6 @@ e la configurazione delle Network Policy per garantire la seguente sicurezza:
 #### database
 1. creazione di un deployment per la definizione del database
 2. creazione di una NetworkPolicy per il database
+3. creazione service per consentire al backend di accedervi
 
 
