@@ -43,8 +43,8 @@ metadata:
   name: my-yaml-secret
   type: Opaque
   data:
-    username: bXktdXNlcg== # Base64 encoded valore di 'my-user'
-    password: bXktcGFzc3dvcmQ= # Base64 encoded valore di 'my-password'
+    username: bXktdXNlcg== 
+    password: bXktcGFzc3dvcmQ= 
 ```
 Applica il file:
 ```bash
