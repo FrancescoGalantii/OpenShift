@@ -1,6 +1,5 @@
 # `obiettivo`
 Lo scopo di questo esercizio si incentra sulla creazione di tre applicazioni:
-
 - Applicazione frontend: Espone un servizio web all'esterno del cluster.
 - Applicazione backend: Fornisce servizi all'applicazione frontend.
 - Database: Contiene i dati delle applicazioni.
@@ -21,9 +20,16 @@ e la configurazione delle Network Policy per garantire la seguente sicurezza:
 ---
 
 ## passaggi
-
-• Applicazione frontend: Espone un servizio web all'esterno del cluster.
-• Applicazione backend: Fornisce servizi all'applicazione frontend.
-• Database: Contiene i dati delle applicazioni.
+##### frontend
+1. creazione di un deployment per il frontend
+2. creazione di una NetworkPolicy per il frontend
+3. creazione di un service per il frontend
+##### backend
+1. creazione di un deployment per il backend
+2. creazione di una NetworkPolicy per il backend
+3. creazione di un service per il backend
+##### database
+1. creazione di un deployment per la definizione del database
+2. creazione di una NetworkPolicy per il database
 
 
