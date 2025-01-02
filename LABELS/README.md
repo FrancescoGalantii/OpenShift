@@ -44,10 +44,10 @@ spec:
         app: web
     spec:
       containers:
-      - name: web-app
-        image: nginx:latest
-        ports:
-        - containerPort: 80
+        - name: web-app
+          image: nginx:latest
+          ports:
+            - containerPort: 80
 ```
 
 ### 2. Service (LoadBalancer)
@@ -68,9 +68,9 @@ spec:
     app: web
     environment: dev
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
+    - protocol: TCP
+      port: 80
+      targetPort: 80
 ```
 
 ### 3. ReplicaSet
@@ -98,10 +98,10 @@ spec:
         app: web
     spec:
       containers:
-      - name: web-app
-        image: nginx:latest
-        ports:
-        - containerPort: 80
+        - name: web-app
+          image: nginx:latest
+          ports:
+            - containerPort: 80
 ```
 
 ### 4. Ingress
@@ -157,11 +157,11 @@ spec:
             memory: "200Mi"
             cpu: "100m"
         volumeMounts:
-        - name: varlog
+          - name: varlog
           mountPath: /var/log
       volumes:
-      - name: varlog
-        hostPath:
+        - name: varlog
+          hostPath:
           path: /var/log
 ```
 
