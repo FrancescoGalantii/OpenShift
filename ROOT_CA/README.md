@@ -8,20 +8,23 @@ Creare ROOT CA self-signed e locale
 ---
 ## passaggi per la creazione
 1. creazione directory per la CA
-    
-       mkdir -p ~/myCA
-       cd ~/myCA
-       mkdir certs crl newcerts private
-       chmod 700 private
-       touch index.txt
-       echo 1000 > serial
-2. generazione chiave privata per la ROOT CA
-
-        openssl genrsa -aes256 -out private/ca.key.pem 4096
-        chmod 400 private/ca.key.pem
-3. creazione di un certificato self-signed per la ROOT CA
-
-        openssl req -x509 -new -nodes -key private/ca.key.pem -sha256 -days 3650 -out certs/ca.cert.pem
+```bash
+mkdir -p ~/myCA
+cd ~/myCA
+mkdir certs crl newcerts private
+chmod 700 private
+touch index.txt
+echo 1000 > serial
+```
+3. generazione chiave privata per la ROOT CA
+```bash
+openssl genrsa -aes256 -out private/ca.key.pem 4096
+chmod 400 private/ca.key.pem
+```
+4. creazione di un certificato self-signed per la ROOT CA
+```bash
+openssl req -x509 -new -nodes -key private/ca.key.pem -sha256 -days 3650 -out certs/ca.cert.pem
+```
 *!!Durante la creazione verrà chiesto di inserire delle informazioni:*
 
          Country Name (2 letter code) [AU]:
@@ -33,8 +36,9 @@ Creare ROOT CA self-signed e locale
          Email Address []:
 ---
 ## verifica generazione certificato 
-
-    openssl x509 -noout -text -in certs/ca.cert.pem
+```bash
+openssl x509 -noout -text -in certs/ca.cert.pem
+```
 ---
 ## consigli aggiuntivi 
 • Conservare in sicurezza la chiave privata della ROOT CA
