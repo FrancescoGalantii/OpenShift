@@ -1,6 +1,8 @@
 # `obiettivo`
 Installare Prometheus Stack tramite helm chart uffiale --> `https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack`
 e provare il BlackBox Exporter per il monitoring degli endpoint http.
+
+---
 ## passaggi 
 1. Installare Prometheus Stack tramite helm chart uffiale
 
