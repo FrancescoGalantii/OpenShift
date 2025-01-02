@@ -195,8 +195,3 @@ spec:
 - Assicurati che il tuo cluster abbia un Ingress Controller (ad esempio NGINX) installato e configurato.
 - Aggiorna il tuo DNS o il file `/etc/hosts` per puntare `web-app.dev.example.com` all'IP esterno del controller Ingress.
 - Utilizza `kubectl logs` per risolvere eventuali problemi con i pod.
-
----
-
-## Licenza
-Questo esercizio è fornito per scopi educativi. Sentiti libero di usarlo e modificarlo secondo le necessità.
