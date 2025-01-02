@@ -1,5 +1,6 @@
 # `obiettivo`
 Creare un CSR, Quando crei un file CSR, stai essenzialmente richiedendo a una CA attendibile di emettere un certificato digitale che verifichi l'identità del tuo sito web o della tua organizzazione. IL CSR è firmato con la chiave privata corrispondente, il che dimostra che possiedi la chiave privata e garantisce l'integrità del file CSR dati.
+---
 ## passaggi creazione CSR
 1. generazione chiave privata
 
@@ -19,10 +20,12 @@ Creare un CSR, Quando crei un file CSR, stai essenzialmente richiedendo a una CA
           Email Address []:
           A challenge password []:
           An optional company name []:`
+---
    
 ## verifica creazione CSR
 
     openssl req -noout -text -in mydomain.csr
+---
 ## Dettagli
 • `mydomain.key`: La chiave privata, da conservare in sicurezza. 
 
