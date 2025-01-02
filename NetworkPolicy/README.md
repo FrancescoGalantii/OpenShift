@@ -20,15 +20,15 @@ e la configurazione delle Network Policy per garantire la seguente sicurezza:
 ---
 
 ## passaggi
-##### frontend
+#### frontend
 1. creazione di un deployment per il frontend
 2. creazione di una NetworkPolicy per il frontend
 3. creazione di un service per il frontend
-##### backend
+#### backend
 1. creazione di un deployment per il backend
 2. creazione di una NetworkPolicy per il backend
 3. creazione di un service per il backend
-##### database
+#### database
 1. creazione di un deployment per la definizione del database
 2. creazione di una NetworkPolicy per il database
 
