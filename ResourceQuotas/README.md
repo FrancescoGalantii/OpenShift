@@ -1,5 +1,7 @@
 # `obiettivo`
 creare un manifest che descriva il ResourceQuotas ed applicarle verificando l'effettivo funzionamento al superamento delle soglie indicate.
+
+---
 ## passaggi
 1. creare il project(namespace) di prova
 
@@ -28,6 +30,7 @@ creare un manifest che descriva il ResourceQuotas ed applicarle verificando l'ef
 
        kubectl apply -f resource-quotas.yaml --> per kubernetes
        oc apply -f resource-quotas.yaml --> per OpenShift
+---
 ## testare il funzionamento 
 Affinche si possa vedere il funzionamento delle ResourceQuotas si deve creare qualcosa che superi quel limite di risorse impostate nel mio caso un pod.
 1. creazione pod
