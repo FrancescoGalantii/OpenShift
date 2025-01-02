@@ -1,6 +1,6 @@
 # `Gestione e Lettura dei Secret in Kubernetes`
 
-Questo esercizio illustra come creare e leggere Secret in Kubernetes utilizzando un Pod. I Secret sono oggetti di Kubernetes progettati per gestire dati sensibili come password, token, o chiavi di accesso in modo sicuro.
+Questo esercizio ha il fine di illustrare come creare e leggere Secret in Kubernetes utilizzando un Pod. I Secret sono oggetti di Kubernetes progettati per gestire dati sensibili come password, token, o chiavi di accesso in modo sicuro.
 
 ---
 
