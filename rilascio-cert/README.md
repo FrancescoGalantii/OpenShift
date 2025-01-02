@@ -1,5 +1,7 @@
 # `obiettivo`
 Rilasciare i certificati richiesti dal CSR tramite ROOT CA creata precedentemente
+
+---
 ## prerequisiti
 • Una Root CA configurata, con i seguenti file:
 
@@ -20,7 +22,7 @@ Rilasciare i certificati richiesti dal CSR tramite ROOT CA creata precedentement
     ├── crl/
     ├── index.txt (vuoto inizialmente)
     ├── serial (contenente "01")
-
+---
 ## passaggi 
 1. verifica CSR
 
@@ -55,6 +57,7 @@ Rilasciare i certificati richiesti dal CSR tramite ROOT CA creata precedentement
        Write out database with 1 new entries
        Database updated
    3.2 vorrà dire che il certificato che OpenSSL ha verificato e firmato con successo il CSR utilizzando la Root CA.
+---
 ## spiegazione output
 1. **`Check that the request matches the signature`**
    --> Questo passaggio verifica che il CSR non sia stato alterato e che corrisponda alla chiave privata utilizzata per generarlo.
