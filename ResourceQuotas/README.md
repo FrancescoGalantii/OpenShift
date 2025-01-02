@@ -55,6 +55,7 @@ metadata:
           memory: "4Gi"
 ```
    1.1 si può notare che nel manifest delle ResourceQuotas request cpu è impostato con 4 quindi per il pod la impostiamo a 5
+   
 2. applicare il file yaml
 
        kubectl apply -f test-overlimit.yaml
