@@ -75,7 +75,7 @@ e provare il BlackBox Exporter per il monitoring degli endpoint http.
 
       • configurare prometheus per usare il blackbox Exporter
         vi blackbox-servicemonitor.yaml
-
+        ```yaml
         apiVersion: monitoring.coreos.com/v1
         kind: ServiceMonitor
         metadata:
@@ -99,11 +99,12 @@ e provare il BlackBox Exporter per il monitoring degli endpoint http.
                   targetLabel: instance
                 - targetLabel: __address__
                   replacement: prometheus-blackbox-exporter.monitoring.svc:9115
+        ```
      •  applicare il file al cluster --> `kubectl apply -f blackbox-servicemonitor.yaml`
 
      •  aggiungere un target da monitorare
         vi blackbox-targets.yaml
-
+        ```yaml
         apiVersion: v1
         kind: ConfigMap
         metadata:
@@ -122,6 +123,7 @@ e provare il BlackBox Exporter per il monitoring degli endpoint http.
                 ]
               }
             ]
+          ```
       • applicare la configurazione --> `kubectl apply -f blackbox-targets.yaml`
 
            
