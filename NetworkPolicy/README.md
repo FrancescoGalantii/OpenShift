@@ -18,19 +18,19 @@ e la configurazione delle Network Policy per garantire la seguente sicurezza:
 3. il resto dipende se vogliate usare un applicazione già sviluppata in precedenza o magari utilizzare un server web come NGINX
 ---
 ## passaggi
-#### 1. frontend
+#### 1) frontend
 1. creazione di un deployment per il frontend
 2. creazione di una NetworkPolicy per il frontend
 3. creazione di un service per il frontend
-#### 2. backend
+#### 2) backend
 1. creazione di un deployment per il backend
 2. creazione di una NetworkPolicy per il backend
 3. creazione di un service per il backend
-#### 3. database
+#### 3) database
 1. creazione di un deployment per la definizione del database
 2. creazione di una NetworkPolicy per il database
 3. creazione service per consentire al backend di accedervi
-#### 4. applicazione manifest
+#### 4) applicazione manifest
 ```bash
 kubectl apply -f frontend-deployment.yaml
 kubectl apply -f frontend-networkpolicy.yaml
