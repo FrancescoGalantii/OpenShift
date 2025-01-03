@@ -44,14 +44,14 @@ kubectl apply -f service-database.yaml
 ```
 ---
 ## verifiche
-#### 1. NetworkPolicy
+#### 1) NetworkPolicy
 kubectl get networkpolicies
 
     NAME              POD-SELECTOR   AGE
     frontend-policy   app=frontend   20s
     backend-policy    app=backend    20s
     database-policy   app=database   20s
-#### 2. Pods
+#### 2) Pods
 kubectl get pods dove l'output dovrà essere il seguente
 
     NAME                           READY    STATUS      RESTARTS   AGE 
@@ -60,16 +60,16 @@ kubectl get pods dove l'output dovrà essere il seguente
     backend-6d476f755-4l9cf         1/1     Running     0          17h      
     backend-6d476f755-ltvvd         1/1     Running     0          17h
     database-5965f678c9-gzrkn       1/1     Running     0          17h
-#### 3. comunicazione
-frontend --> backend
+#### 3) comunicazione
+1. frontend --> backend
 ```bash
 kubectl exec -it <frontend-pod> -- curl http://backend-service:5000
 ```
-backend --> Database
+2. backend --> Database
 ```bash
 kubectl exec -it <backend-pod> -- psql -h database-service -U user -d mydb
 ```
-Database(deve fallire)
+3. Database(deve fallire)
 ```bash
 kubectl exec -it <database-pod> -- ping google.com
 ```
